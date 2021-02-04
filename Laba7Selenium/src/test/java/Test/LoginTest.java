@@ -46,19 +46,14 @@ public class LoginTest {
         //и loginPage
         //вводим логин
         loginPage.inputEmail(ConfProperties.getProperty("email"));
-        Thread.sleep(2000);
         //нажимаем кнопку входа
         loginPage.clickLoginBtn();
-        Thread.sleep(2000);
         //вводим пароль
         loginPage.inputPassword(ConfProperties.getProperty("password"));
-        Thread.sleep(2000);
         //нажимаем кнопку входа
         loginPage.clickPasswordBtn();
-        Thread.sleep(2000);
         //входим в меню выбора
         profilePage.entryMenu();
-        Thread.sleep(2000);
         //выбираем Account settings
         profilePage.entryAccountSettings();
         //получаем отображаемый логин
