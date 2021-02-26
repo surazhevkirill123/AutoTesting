@@ -1,10 +1,10 @@
-package fundamentals.main;
+package fundamentals.optional2;
 
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Optional2 {
+public class Task1 {
     public static void main(String[] args) {
 
         //Задание. Ввести с консоли n - размерность матрицы a [n] [n]. Задать значения элементов матрицы в интервале значений от -M до M с помощью генератора случайных чисел (класс Random).

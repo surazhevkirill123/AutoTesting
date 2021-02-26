@@ -1,7 +1,8 @@
-package collections;
+package collections.Bouquet;
+
+import collections.Flower.Flower;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Bouquet {
@@ -28,16 +29,10 @@ public class Bouquet {
 
     @Override
     public String toString() {
-        return "Bouquet{" +
-                "price=" + price +
-                ", flowers=" + flowers +
-                '}';
+        return String.format("Bouquet{price=%s, flowers=%s}", price, flowers);
     }
 
     public void findFlowerByStemLength(int parameter) {
-        for (Flower fl : flowers) {
-            if (fl.getStemLength() == parameter)
-                System.out.println(fl);
-        }
+        flowers.stream().filter(x->x.getStemLength()==parameter).forEach(System.out::println);
     }
 }

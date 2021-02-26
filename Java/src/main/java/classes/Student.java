@@ -1,42 +1,30 @@
 package classes;
 
+import java.util.UUID;
+
 public class Student {
-    private int id;
-    private static int nextId = 0;
-    private String surname;
+    private String id;
     private String name;
-    private String patronymic;
+    private String surname;
     private String dateOfBirth;
     private String phoneNumber;
     private String faculty;
     private String course;
     private String group;
 
-    public Student(String surname, String name, String patronymic, String dateOfBirth, String phoneNumber, String faculty, String course, String group) {
-
-        this.surname = surname;
+    public Student(String name, String surname, String dateOfBirth, String phoneNumber, String faculty, String course, String group) {
         this.name = name;
-        this.patronymic = patronymic;
+        this.surname = surname;
         this.dateOfBirth = dateOfBirth;
         this.phoneNumber = phoneNumber;
         this.faculty = faculty;
         this.course = course;
         this.group = group;
-        id = nextId++;
-        setSurname(surname);
-        setName(name);
-        setPatronymic(patronymic);
-        setDateOfBirth(dateOfBirth);
-        setPhoneNumber(phoneNumber);
-        setFaculty(faculty);
-        setCourse(course);
-        setGroup(group);
+        id = UUID.randomUUID().toString();;
     }
 
 
-    public String getName() {
-        return name;
-    }
+    public String getName() { return name; }
 
     public void setName(String name) {
         this.name = name;
@@ -44,10 +32,6 @@ public class Student {
 
     public String getPatronymic() {
         return name;
-    }
-
-    public void setPatronymic(String patronymic) {
-        this.patronymic = patronymic;
     }
 
     public String getSurname() {
@@ -100,19 +84,10 @@ public class Student {
 
 
     public String toString() {
-        return "Student{" + " id " + id +
-                ", surname='" + surname + '\'' +
-                ", name='" + name + '\'' +
-                ", patronymic='" + patronymic + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", faculty='" + faculty + '\'' +
-                ", course='" + course + '\'' +
-                ", group='" + group + '\'' +
-                '}';
+        return String.format("Student{ id %s, name='%s', surname='%s', dateOfBirth='%s', phoneNumber='%s', faculty='%s', course='%s', group='%s'}", id, name, surname, dateOfBirth, phoneNumber, faculty, course, group);
     }
 
     public String fullName() {
-        return surname + " " + name + " " + patronymic;
+        return String.format("%s %s", name, surname);
     }
 }

@@ -1,9 +1,12 @@
-package collections;
+package collections.Childs;
+
+import collections.EnumColor.ColorEnum;
+import collections.Flower.Flower;
 
 public class Tulip extends Flower {
     private final static String name = "Тюльпан";
 
-    public Tulip(double price, Color color, int freshness, int stemLength) {
+    public Tulip(double price, ColorEnum color, int freshness, int stemLength) {
         super(price, name, color, freshness, stemLength);
     }
 

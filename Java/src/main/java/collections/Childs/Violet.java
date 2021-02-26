@@ -1,9 +1,12 @@
-package collections;
+package collections.Childs;
+
+import collections.EnumColor.ColorEnum;
+import collections.Flower.Flower;
 
 public class Violet extends Flower {
     private final static String name = "Фиалка";
 
-    public Violet(double price, Color color, int freshness, int stemLength) {
+    public Violet(double price, ColorEnum color, int freshness, int stemLength) {
         super(price, name, color, freshness, stemLength);
     }
 
