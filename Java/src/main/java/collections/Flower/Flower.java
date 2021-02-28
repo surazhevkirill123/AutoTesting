@@ -1,15 +1,15 @@
 package collections.Flower;
 
-import collections.EnumColor.ColorEnum;
+import collections.ColorEnum.ColorEnum;
 
 import java.util.Comparator;
 
 public abstract class Flower {
-    private final double price;
-    private final String name;
-    private final ColorEnum color;
-    private final int freshness;
-    private final int stemLength;
+    private double price;
+    private String name;
+    private ColorEnum color;
+    private int freshness;
+    private int stemLength;
 
 
     protected Flower(double price, String name, ColorEnum color, int freshness, int stemLength) {

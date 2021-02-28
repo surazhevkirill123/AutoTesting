@@ -1,7 +1,10 @@
 package entity;
 
-import collection.MilitaryType;
-import java.util.*;
+import model.MilitaryType;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class Airport {

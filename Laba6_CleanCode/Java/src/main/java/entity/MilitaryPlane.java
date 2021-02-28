@@ -1,6 +1,6 @@
 package entity;
 
-import collection.MilitaryType;
+import model.MilitaryType;
 
 import java.util.Objects;
 

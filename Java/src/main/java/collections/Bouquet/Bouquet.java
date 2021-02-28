@@ -32,7 +32,7 @@ public class Bouquet {
         return String.format("Bouquet{price=%s, flowers=%s}", price, flowers);
     }
 
-    public void findFlowerByStemLength(int parameter) {
-        flowers.stream().filter(x->x.getStemLength()==parameter).forEach(System.out::println);
+    public void findFlowerByStemLengthRange(int parameter1, int parameter2) {
+        flowers.stream().filter(x -> x.getStemLength() >= parameter1 && x.getStemLength() <= parameter2).forEach(System.out::println);
     }
 }

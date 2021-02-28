@@ -1,7 +1,7 @@
 package entity;
 
-import collection.ClassificationLevel;
-import collection.ExperimentalType;
+import model.ClassificationLevel;
+import model.ExperimentalType;
 
 public class ExperimentalPlane extends Plane{
     private ExperimentalType type;
@@ -30,7 +30,7 @@ public class ExperimentalPlane extends Plane{
     public String toString() {
         return "ExperimentalPlane{" + "type=" + type +
                 ", classificationLevel=" + classificationLevel +
-                ", model='" + model + '\'' +
+                ", model='" + getModel() + '\'' +
                 '}';
     }
 }

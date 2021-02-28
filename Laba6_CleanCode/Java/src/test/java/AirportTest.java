@@ -1,7 +1,7 @@
 import entity.*;
-import collection.ClassificationLevel;
-import collection.ExperimentalType;
-import collection.MilitaryType;
+import model.ClassificationLevel;
+import model.ExperimentalType;
+import model.MilitaryType;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

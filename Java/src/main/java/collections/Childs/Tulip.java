@@ -1,6 +1,6 @@
 package collections.Childs;
 
-import collections.EnumColor.ColorEnum;
+import collections.ColorEnum.ColorEnum;
 import collections.Flower.Flower;
 
 public class Tulip extends Flower {

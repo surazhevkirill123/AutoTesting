@@ -5,7 +5,7 @@ import collections.Bouquet.Bouquet;
 import collections.Childs.Rose;
 import collections.Childs.Tulip;
 import collections.Childs.Violet;
-import collections.EnumColor.ColorEnum;
+import collections.ColorEnum.ColorEnum;
 import collections.Flower.Flower;
 
 import java.util.Collections;
@@ -24,6 +24,6 @@ public class Main {
         Collections.sort(flowers, Flower.COMPARE_BY_FRESHNESS);
         bouquet.setFlowers(flowers);
         System.out.println("Отсортированный: " + bouquet.toString());   //отсортированный по свежести букет
-        bouquet.findFlowerByStemLength(20);                   //нашли цветок по длине стебля
+        bouquet.findFlowerByStemLengthRange(15,20);                   //нашли цветок по длине стебля(в диапазоне)
     }
 }

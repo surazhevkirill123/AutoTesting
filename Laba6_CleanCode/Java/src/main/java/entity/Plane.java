@@ -3,7 +3,7 @@ package entity;
 import java.util.Objects;
 
 abstract public class Plane {
-    public String model;
+    private String model;
     private int maxSpeed;
     private int maxFlightDistance;
     private int maxLoadCapacity;
@@ -14,6 +14,8 @@ abstract public class Plane {
         this.maxFlightDistance = maxFlightDistance;
         this.maxLoadCapacity = maxLoadCapacity;
     }
+
+    public String getModel() {return model; }
 
     public int getMaxSpeed() {
         return maxSpeed;

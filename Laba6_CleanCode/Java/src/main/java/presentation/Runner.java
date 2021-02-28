@@ -1,6 +1,6 @@
 package presentation;
 
-import collection.MilitaryType;
+import model.MilitaryType;
 import entity.Airport;
 import entity.MilitaryPlane;
 import entity.PassengerPlane;
